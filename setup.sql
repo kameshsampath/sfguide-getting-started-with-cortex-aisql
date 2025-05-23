@@ -43,8 +43,6 @@ create or replace stage sc_articles_data_stage
 copy into SOLUTION_CENTER_ARTICLES  
   from @sc_articles_data_stage;
 
--- Run the following statement to create a Snowflake managed internal stage to store the sample audio files.
-create or replace stage DASH_AUDIO_FILES encryption = (TYPE = 'SNOWFLAKE_SSE') directory = ( ENABLE = true );
 
 -- Run the following statement to create a Snowflake managed internal stage to store the sample image files.
  create or replace stage DASH_IMAGE_FILES encryption = (TYPE = 'SNOWFLAKE_SSE') directory = ( ENABLE = true );
