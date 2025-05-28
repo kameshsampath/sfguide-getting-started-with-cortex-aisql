@@ -69,13 +69,13 @@ Duration: 10
 
 **Step 3.** In Snowsight, [create a SQL Worksheet](https://docs.snowflake.com/en/user-guide/ui-snowsight-worksheets-gs?_fsi=THrZMtDg,%20THrZMtDg&_fsi=THrZMtDg,%20THrZMtDg#create-worksheets-from-a-sql-file) and open [images.sql](https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-aisql/blob/main/images.sql) to execute all statements in order from top to bottom.
 
-**Step 4.** Click on [aisql.ipynb](https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-aisql/blob/main/aisql.ipynb) to download the Notebook from GitHub. (NOTE: Do NOT right-click to download.)
+**Step 4.** Click on [cortex_aisql.ipynb](https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-aisql/blob/main/cortex_aisql.ipynb) to download the Notebook from GitHub. (NOTE: Do NOT right-click to download.)
 
 **Step 5.** In Snowsight:
 
 * On the left hand navigation menu, click on **Projects » Notebooks**
 * On the top right, click on **Notebook** down arrow and select **Import .ipynb file** from the dropdown menu
-* Select **aisql.ipynb** file you downloaded in the step above
+* Select **cortex_aisql.ipynb** file you downloaded in the step above
 * In the Create Notebook popup
     * For Notebook location, select `DASH_DB` and `DASH_SCHEMA`
     * For Python environment, select `Run on warehouse`
@@ -98,7 +98,7 @@ Duration: 15
 > aside negative
 > PREREQUISITE: Successful completion of steps outlined under **Setup**.
 
-Here's the code walkthrough of the [aisql.ipynb](https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-aisql/blob/main/aisql.ipynb) notebook that you downloaded and imported into your Snowflake account.
+Here's the code walkthrough of the [cortex_aisql.ipynb](https://github.com/Snowflake-Labs/sfguide-getting-started-with-cortex-aisql/blob/main/cortex_aisql.ipynb) notebook that you downloaded and imported into your Snowflake account.
 
 **Import_Libraries** 
 
