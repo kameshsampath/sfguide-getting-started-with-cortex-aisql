@@ -117,7 +117,7 @@ Notice that native FILE datatype allows for consolidating all data formats into 
 
 **AI_FILTER** 
 
-Seman0tically "JOIN" customer issues with existing solutions using JOIN ... ON AI_FILTER()
+Semantically "JOIN" customer issues with existing solutions using JOIN ... ON AI_FILTER()
 
 **AI_AGG** 
 
