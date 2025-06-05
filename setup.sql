@@ -2,10 +2,10 @@
 
 CREATE DATABASE IF NOT EXISTS DASH_DB;
 CREATE SCHEMA IF NOT EXISTS DASH_SCHEMA;
-CREATE WAREHOUSE IF NOT EXISTS DASH_S WAREHOUSE_SIZE=SMALL;
+CREATE WAREHOUSE IF NOT EXISTS DASH_WH_S WAREHOUSE_SIZE=SMALL;
 
 USE DASH_DB.DASH_SCHEMA;
-USE WAREHOUSE DASH_S;
+USE WAREHOUSE DASH_WH_S;
   
 create or replace file format csvformat  
   skip_header = 1  
@@ -43,6 +43,8 @@ create or replace stage sc_articles_data_stage
 copy into SOLUTION_CENTER_ARTICLES  
   from @sc_articles_data_stage;
 
-
 -- Run the following statement to create a Snowflake managed internal stage to store the sample image files.
  create or replace stage DASH_IMAGE_FILES encryption = (TYPE = 'SNOWFLAKE_SSE') directory = ( ENABLE = true );
+
+-- Enable cross-region inference
+ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'ANY_REGION';
