@@ -1,7 +1,7 @@
 -- PREREQUISITE: Execute statements in setup.sql
 
 USE DASH_DB.DASH_SCHEMA;
-USE WAREHOUSE DASH_S;
+USE WAREHOUSE DASH_WH_S;
 
 -- Image Files table
 create or replace table IMAGES as
